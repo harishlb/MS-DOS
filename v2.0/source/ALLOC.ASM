@@ -123,6 +123,13 @@ coalesce_check:
         MOV     DS:[DI],CL
         JMP     coalesce                ; try again
 Coalesce    ENDP
+;
+; Make changes for loading the tables
+;
+; Change arena_signature based on the virtual loading mechanism
+;
+
+
 
 SUBTTL $Alloc - allocate space in memory
 PAGE
@@ -368,4 +375,4 @@ do_ext
 
 CODE    ENDS
     END
-         
+���������
